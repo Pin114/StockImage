@@ -30,6 +30,11 @@ header li{
     color: dimgray;
 }
 
+.category-title {
+  position: absolute;
+  margin-bottom: 10px;
+}
+
 body {
       background-color: #e8f6d9dc; /* 柔和灰色背景 */
 }
