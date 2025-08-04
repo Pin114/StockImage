@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
     <header>
-        <div id='navbar' class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+        <div id='navbar' class="bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg custom-navbar w-100" >
                 <div class="container">
                     <a class="navbar-brand" href="#"><img src="img/logo.jpg" style="width: 70px; height: 70px;"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,24 +25,18 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About us</a>
+                                <a class="nav-link" href="gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Memories
+                                    Services
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Taiwan</a></li>
-                                    <li><a class="dropdown-item" href="#">Japan</a></li>
-                                    <li><a class="dropdown-item" href="#">Hong Kong</a></li>
-                                    <li><a class="dropdown-item" href="#">Philippines</a></li>
-                                    <li><a class="dropdown-item" href="#">Belgium</a></li>
-                                    <li><a class="dropdown-item" href="#">Netherland</a></li>
-                                    <li><a class="dropdown-item" href="#">Germany</a></li>
-                                    <li><a class="dropdown-item" href="#">Spain</a></li>
+                                    <li><a class="dropdown-item" href="#">Custom image</a></li>
+                                    <li><a class="dropdown-item" href="#">FAQ</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -115,33 +110,31 @@
             <div class="row">
                 <div class="col-md-12">
                 <h1>Welcome to Chen's studio</h1>
-                <p class='lead'> The easiest way to embrace the beauty of the world!</p>
-                <a class="btn" btn-primary href="#">Start access</a>
+                <p class='lead'> Beauty in Every Pixel.</p>
+                <a class="btn" btn-primary href="gallery.html">Start exploration</a>
                 </div>
             </div>
         </div>
     </section>
     <section id="category">
         <div class="container">
-            <h2 class="text-center mb-4">Categories</h2>
+            <h3 class="text-center mb-4">Categories</h3>
             <div class="row">
-                <div class="col-md-4 text-center">Landscape<br><img src='img/landscape.JPG' style="height: auto; width: 100%;"></div>
-                <div class="col-md-4 text-center">Portrait<br><img src='img/portrait.JPG' style='height: auto; width:100%;'></div>
-                <div class="col-md-4 text-center">Foodporn<br><img src='img/food.JPG' style="height: auto; width:100%;"></div>
+                <div class="col-md-4 text-center"><h5 class=".category-title ">Landscape</h5><br><img src='img/landscape.JPG' style="height: auto; width: 100%;"></div>
+                <div class="col-md-4 text-center"><h5 class=".category-title ">Portrait</h5><br><img src='img/portrait.JPG' style='height: auto; width:100%;'></div>
+                <div class="col-md-4 text-center"><h5 class=".category-title ">Foodporn</h5><br><img src='img/food.JPG' style="height: auto; width:100%;"></div>
             </div>
-
         </div>
-
     </section>
     <footer class="footer-section bg-dark text-white text-center py-4 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 ">
-                    <h5 class="text-center">Visit us</h5><br>
+                    <h6 class="text-center">Visit us</h6><br>
                     <p>10 Wonderful Street, Wonderland</p>
                 </div>
                 <div class="col-md-8 text-center">
-                    <h5 class="text-center">Contact</h5><br>
+                    <h6 class="text-center">Contact</h6><br>
                     <p>+886 001001001</p>
                     <a class="text-white" btn-primary href="#">Instagram</a>
                 </div>
