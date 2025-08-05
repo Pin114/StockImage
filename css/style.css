@@ -27,7 +27,7 @@ header li{
     font-family: "Libertinus Serif", serif;
     font-weight: 100;
     font-style: italic;
-    color: dimgray;
+    color: rgb(62, 60, 60);
 }
 
 .category-title {
@@ -35,14 +35,26 @@ header li{
   margin-bottom: 10px;
 }
 
+.category-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
 body {
-      background-color: #e8f6d9dc; /* 柔和灰色背景 */
+      background-color: #b5bfabdc; /* 柔和灰色背景 */
+      padding-top: 70px;
 }
 
 .custom-navbar{
-    background-color: #e8f6d9dc; 
+    background-color: #b5bfabdc; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 確保蓋在其他內容上 */
 }
 
 .dropdown-menu{
-    background-color: #e8f6d9dc; 
+    background-color: #b5bfabdc; 
 }
