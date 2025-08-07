@@ -44,6 +44,8 @@ header li{
 body {
       background-color: #b5bfabdc; /* 柔和灰色背景 */
       padding-top: 70px;
+    margin: 0;
+      padding: 0;
 }
 
 .custom-navbar{
@@ -58,3 +60,4 @@ body {
 .dropdown-menu{
     background-color: #b5bfabdc; 
 }
+
