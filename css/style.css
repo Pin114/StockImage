@@ -14,7 +14,7 @@ p,a,input,label,textarea,span,ul,li{
 
 .top-section-with-background {
     position: relative; 
-    height: 500px; /* 設定你想要的高度*/
+    height: 350px; 
     overflow: hidden; 
 }
 
