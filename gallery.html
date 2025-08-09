@@ -187,41 +187,48 @@
             </div>
         </header>
     <main>
-        <section class="py-5 text-center container">
+        <section class="py-5 text-center container" >
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Gallery</h1>
                     <p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                     <p>
-                        <a href="#" class="btn btn-primary my-2">Subscribe now</a>
+                        <a href="#" class="btn btn-primary my-2">Subscribe to access all pictures</a>
                         <a href="#" class="btn btn-secondary my-2">Start free trial</a>
                     </p>
                 </div>
             </div>
         </section>
-        <div class="album py-5 bg-body-tertiary">
+
+
+        <div class="album py-5" style='background-color: #fdfefeb9;'>
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
+                <div id='filter' class="filter-buttons">
+                    <button data-filter="all" class="text-btn btn-primary btn-no-border">All</button>
+                    <button data-filter="free" class="text-btn btn-secondary btn-no-border">Free</button>
+                    <button data-filter="paid" class="text-btn btn-secondary btn-no-border">Paid</button>
+                    <button data-filter="Portrait" class="text-btn btn-secondary btn-no-border">Portrait</button>
+                    <button data-filter="Landscape" class="text-btn btn-secondary btn-no-border">Landscape</button>
+                    <button data-filter="Foodporn" class="text-btn btn-secondary btn-no-border">Foodporn</button>
+                    <button data-filter="Animals" class="text-btn btn-secondary btn-no-border">Animals</button>
+                    <button data-filter="Still-life" class="text-btn btn-secondary btn-no-border">Still life</button>    
+                    <button data-filter="Architectural" class="text-btn btn-secondary btn-no-border">Architectural</button>    
+                </div>
+                
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="productList">
+                    <div class="col product-item" data-category="free Portrait">
                         <div class="card shadow-sm">
-                            <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-                                <title>Placeholder</title>
-                                <rect width="100%" height="100%" fill="#55595c"></rect>
-                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                            </svg>
-                            <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                            <img src="/img/landscape1.JPG" class="card-img-top" height="225" />
+                            <div class="card-body">                                <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                         <button type="button" class="btn btn-sm btn-outline-secondary">Add to the cart</button>
                                     </div>
-                                    <small class="text-body-secondary">9 mins</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col product-item" data-category="paid Portrait">
                         <div class="card shadow-sm">
                             <svg aria-label="Placeholder: Thumbnail" class="bd-placeholder-img card-img-top" height="225" preserveAspectRatio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
                                 <title>Placeholder</title>
@@ -377,13 +384,61 @@
             </div>
         </div>
     </main>
-    <footer class="text-body-secondary py-5">
+   <footer class="text-body-secondary py-5">
         <div class="container">
             <p class="float-end mb-1">
                 <a href="#">Back to top</a>
             </p>
       </div>
+        <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control" placeholder="Email address" />
+                <button id="newsletter" class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; The Chen's Studio   All rights reserved.</p>
+            <div class="row">
+                <div class="col-md-6" style="text-align-last: left;">
+                    <h6>Visit us</h6>
+                    <p>10 Wonderful Street, Wonderland</p>
+                </div>
+                <div class="col-md-6" style="text-align-last: left;">
+                    <h6>Contact</h6>
+                    <p>+886 001001001</p>
+                </div>
+            </div>
+        </div>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Instagram">
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Facebook">
+                <svg class="bi" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
     </footer>
+
     <script src="../assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
 </body>
 </html>

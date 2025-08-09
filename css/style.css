@@ -5,11 +5,18 @@ p,a,input,label,textarea,span,ul,li{
     font-family:'Open Sans',sans-serif;
 }
 
-.btn{
+.custom-navbar.btn{
     background-color: #d1e7dd;
     color: black;
     padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 60px;
+}
+
+#newsletter.btn{
+    background-color: #d1e7dd;
+    color: rgb(69, 54, 54);
+    padding: 5px 15px;
+    border-radius: 60px;
 }
 
 header li{
@@ -29,6 +36,20 @@ header li{
     font-style: italic;
     color: rgb(62, 60, 60);
 }
+#filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#filter .text-btn {
+  margin: 2px;
+  padding: 7px 9px;
+  border: none;
+  background-color: transparent;
+  color: #183d6ed1;
+}
+
 
 .category-title {
   position: absolute;
