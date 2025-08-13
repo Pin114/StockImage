@@ -26,7 +26,25 @@ p,a,input,label,textarea,span,ul,li{
   align-items: center;
 }
 
-.gallery-content-overlay h1, p{
+.footer-btn{
+    border-color: #0000001a;
+}
+
+.checkout-btn{
+    color:rgb(16, 16, 16);
+    background-color: #18e6181a;
+    border-color: #0000001a;
+}
+
+.checkout-btn:hover{ 
+    color: var(--bs-btn-hover-color); 
+    background-color: #2E8B57;  
+    border-color: #2E8B57;
+}
+
+
+
+.gallery-content-overlay h1, h2{
     font-family: "Libertinus Serif", serif;
     font-weight: 100;
     font-style: italic;
