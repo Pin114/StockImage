@@ -26,10 +26,27 @@ p,a,input,label,textarea,span,ul,li{
   align-items: center;
 }
 
+.check-out-body{
+    background-color:#7e978c4b;
+}
+
+.index-body{
+    background-color:#7e978c4b;
+}
+
 .footer-btn{
     border-color: #0000001a;
 }
 
+.cart-text{
+    color: #4b6e9b;
+    font-weight: 600;
+}
+
+.cart-num{
+    color: rgb(255, 255, 255);
+    background-color: #4b6e9b;
+}
 .checkout-btn{
     color:rgb(16, 16, 16);
     background-color: #18e6181a;
@@ -112,6 +129,20 @@ header li{
 
 .back-to-top{
     color: rgb(30, 49, 39);
+}
+
+.welcome{
+    font-family: "Libertinus Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(62, 60, 60);
+}
+
+.check-out-form{
+    font-family: "Libertinus Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(62, 60, 60);
 }
 
 #category h3,#category h5{
