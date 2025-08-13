@@ -18,6 +18,18 @@ p,a,input,label,textarea,span,ul,li{
     overflow: hidden; 
 }
 
+.text-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.img_detail {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin: 10%;
+}
+
 #topic .row{
   position: relative; 
   z-index: 1; 
@@ -78,7 +90,16 @@ p,a,input,label,textarea,span,ul,li{
     object-fit: cover;
 }
 
+.lead{
+    font-family: "Libertinus Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(62, 60, 60);
+}
 
+.description{
+    margin: 10%
+}
 
 #carouselgallery {
     position: absolute;
@@ -145,7 +166,7 @@ header li{
     color: rgb(62, 60, 60);
 }
 
-#category h3,#category h5{
+#category h3,#category h5, #category button.category-title-home{
     font-family: "Libertinus Serif", serif;
     font-weight: 100;
     font-style: italic;
@@ -157,18 +178,32 @@ header li{
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
 #filter .text-btn {
   margin: 2px;
   padding: 7px 9px;
   border: none;
   background-color: transparent;
-  color:rgb(75, 34, 34)
+  font-family: "Libertinus Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(62, 60, 60);
 }
 
+#edit .text-btn {
+  margin: 1px;
+  padding: 1px 1px;
+  border: none;
+  background-color: transparent;
+}
 
 .category-title {
   position: absolute;
   margin-bottom: 10px;
+    font-family: "Libertinus Serif", serif;
+    font-weight: 100;
+    font-style: italic;
+    color: rgb(62, 60, 60);
 }
 
 .category-wrapper {
@@ -192,7 +227,6 @@ body {
      margin: 0;
 
 }
-
 
 .card-img-top {
     height: 320px;
